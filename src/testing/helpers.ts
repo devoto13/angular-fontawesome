@@ -1,9 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Type } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
-import { IconDefinition, IconName, library } from '@fortawesome/fontawesome-svg-core';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { IconDefinition, IconName } from '@fortawesome/fontawesome-svg-core';
 import { FaDuotoneIconComponent } from '../lib/icon/duotone-icon.component';
 import { FaIconComponent } from '../lib/icon/icon.component';
 import { FaLayersCounterComponent } from '../lib/layers/layers-counter.component';
@@ -27,7 +25,6 @@ export function initTest<T>(component: Type<T>, providers?: any[]): ComponentFix
     ],
     providers,
   });
-  library.add(faUser);
   return TestBed.createComponent(component);
 }
 
