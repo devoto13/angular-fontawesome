@@ -1,5 +1,5 @@
 import { DecimalPipe } from '@angular/common';
-import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FaConfig, FaIconLibrary, FontAwesomeModule, IconDefinition } from '@fortawesome/angular-fontawesome';
 import { faFlag, faUser as regularUser } from '@fortawesome/free-regular-svg-icons';
 import {
@@ -11,13 +11,13 @@ import {
   faCog,
   faEllipsisH,
   faFighterJet,
+  faFlag as solidFlag,
   faHeart,
   faMagic,
   faSpinner,
   faSquare,
   faTimes,
   faUser,
-  faFlag as solidFlag,
 } from '@fortawesome/free-solid-svg-icons';
 import { AlternatePrefixComponent } from './alternate-prefix.component';
 
@@ -82,7 +82,11 @@ export class AppComponent {
     inject(FaConfig).fallbackIcon = faMagic;
   }
 
-  onChange(event: any) {
-    this.selectedPosition = event.target.value;
+  onChange(event: Event) {
+    this.selectedPosition = (event.target as HTMLSelectElement).value as
+      | 'bottom-right'
+      | 'bottom-left'
+      | 'top-right'
+      | 'top-left';
   }
 }

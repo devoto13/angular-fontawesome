@@ -34,6 +34,7 @@ export class MockFaIconLibrary implements FaIconLibraryInterface {
     }
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   getIconDefinition(prefix: IconPrefix, name: IconName): IconDefinition {
     return dummyIcon;
   }

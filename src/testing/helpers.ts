@@ -1,7 +1,7 @@
 import { ComponentFixture } from '@angular/core/testing';
 import { IconDefinition } from '../lib/types';
 
-export const queryByCss = (fixture: ComponentFixture<any>, cssSelector: string): HTMLElement =>
+export const queryByCss = (fixture: ComponentFixture<unknown>, cssSelector: string): HTMLElement =>
   fixture.nativeElement.querySelector(cssSelector);
 
 export const faDummy: IconDefinition = {

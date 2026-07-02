@@ -1,12 +1,12 @@
 import { Component, signal, Type } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
-import { queryByCss } from '../../testing/helpers';
 import { faCircle, faUser } from '@fortawesome/free-solid-svg-icons';
+import { queryByCss } from '../../testing/helpers';
 import { FaIconComponent } from '../icon/icon.component';
 import { FaStackItemSizeDirective } from './stack-item-size.directive';
 import { FaStackComponent } from './stack.component';
 
-const imports: Type<any>[] = [FaStackComponent, FaStackItemSizeDirective, FaIconComponent];
+const imports: Type<unknown>[] = [FaStackComponent, FaStackItemSizeDirective, FaIconComponent];
 
 describe('FaStackItemSizeDirective', () => {
   it('should attach fa-stack-1x or fa-stack-2x classes to icons', () => {

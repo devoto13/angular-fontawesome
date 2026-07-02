@@ -2,12 +2,12 @@ import { Component, signal, Type } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { faCircle, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faDummy, queryByCss } from '../../testing/helpers';
-import { FaIconComponent } from '../icon/icon.component';
 import { FaDuotoneIconComponent } from '../icon/duotone-icon.component';
+import { FaIconComponent } from '../icon/icon.component';
 import { FaStackItemSizeDirective } from './stack-item-size.directive';
 import { FaStackComponent } from './stack.component';
 
-const imports: Type<any>[] = [FaStackComponent, FaStackItemSizeDirective, FaIconComponent];
+const imports: Type<unknown>[] = [FaStackComponent, FaStackItemSizeDirective, FaIconComponent];
 
 describe('FaStackComponent', () => {
   it('should render stack icon', () => {

@@ -1,6 +1,5 @@
 import { Directive, effect, input } from '@angular/core';
 import { SizeProp } from '@fortawesome/fontawesome-svg-core';
-import { FaStackComponent } from './stack.component';
 
 @Directive({
   // eslint-disable-next-line @angular-eslint/directive-selector

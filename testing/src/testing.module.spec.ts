@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
@@ -7,8 +7,8 @@ import { FontAwesomeTestingModule } from './testing.module';
 
 @Component({
   selector: 'fa-host',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
-  changeDetection: ChangeDetectionStrategy.Eager,
   template: '<fa-icon icon="someicon" />',
 })
 class HostComponent {}

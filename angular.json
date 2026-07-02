@@ -131,6 +131,7 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
+            "eslintConfig": "projects/demo/eslint.config.mjs",
             "lintFilePatterns": ["projects/demo/**/*.ts", "projects/demo/**/*.html"]
           }
         },
